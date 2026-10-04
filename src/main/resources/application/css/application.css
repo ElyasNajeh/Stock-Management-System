@@ -1,0 +1,52 @@
+.root {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-smoothing-type: lcd;
+}
+
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: #d8deeb;
+    -fx-border-width: 1;
+    -fx-padding: 0 0 8 0;
+}
+
+.table-view .column-header-background,
+.table-view .column-header {
+    -fx-background-color: #0d1b58;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10 8;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #f5f7fb;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #3854a5;
+    -fx-text-background-color: white;
+}
+
+.combo-box,
+.date-picker {
+    -fx-pref-width: 320;
+    -fx-font-size: 15px;
+    -fx-background-color: white;
+    -fx-border-color: #0d1b58;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+
+.text-field:focused,
+.text-area:focused,
+.combo-box:focused,
+.date-picker:focused {
+    -fx-effect: dropshadow(gaussian, rgba(56, 84, 165, 0.35), 8, 0.2, 0, 0);
+}
+
+.button:disabled {
+    -fx-opacity: 0.55;
+}
